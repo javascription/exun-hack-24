@@ -1,7 +1,8 @@
 import { useRef, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faMoon, faXmark } from '@fortawesome/free-solid-svg-icons';
-import '@fortawesome/fontawesome-svg-core/styles.css';
+import { faXmark } from '@fortawesome/free-solid-svg-icons/faXmark';
+import { faBars } from '@fortawesome/free-solid-svg-icons/faBars';
+import { faMoon } from '@fortawesome/free-solid-svg-icons/faMoon';
 
 export default function Navigation() {
     const navbarRef = useRef(null);

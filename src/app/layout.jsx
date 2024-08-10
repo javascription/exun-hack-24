@@ -1,6 +1,6 @@
 import { Poppins } from "next/font/google";
-import "./globals.css";
-import '@fortawesome/react-fontawesome'
+import './static/fortawesome.css'
+import './globals.css';
 
 const poppins = Poppins({
   subsets: ["latin"],
