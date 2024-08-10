@@ -41,3 +41,22 @@ body {
 .p-13-percent {
   padding: 13% 0;
 }
+
+.p-2-3-percent {
+  padding: 2% 3%;
+}
+
+.f-links a {
+  padding-inline: 10px;
+} 
+
+
+@media (max-width: 650px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .f-links a {
+    padding-inline: 15px;
+  }
+}

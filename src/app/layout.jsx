@@ -1,11 +1,19 @@
 import { Poppins } from "next/font/google";
-import './static/fortawesome.css'
+import './static/fortawesome.css' // remove unused classes after prod
 import './globals.css';
+
+// Components
+
+import dynamic from 'next/dynamic';
+const Navbar = dynamic(() => import('./components/Navbar'))
+const Footer = dynamic(() => import('./components/Footer'))
 
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', "900"]
 });
+
+// Metadata - SEO
 
 export const metadata = {
   title: "Create Next App",
@@ -15,7 +23,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={`${poppins.className} m-0 p-0 w-screen h-screen scroll-smooth overflow-x-hidden bg-secondary`}>
+        <Navbar />
+        {children}
+        <Footer />
+        </body>
     </html>
   );
 }

@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./src/page.jsx",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/Footer.jsx",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
