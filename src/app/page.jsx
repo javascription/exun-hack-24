@@ -1,9 +1,11 @@
-"use client"
+import dynamic from 'next/dynamic'
+
+import Front from './components/Hero';
 
 export default function Home() {
     return (
         <main>
-            <div className="text-3xl sm:text-7xl from-slate-50 to-slate-800">Hi</div>
+            <Front />
         </main>
     );
 }

@@ -5,6 +5,7 @@ import './globals.css';
 // Components
 
 import dynamic from 'next/dynamic';
+import SessionWrapper from "./components/SessionWrapper";
 const Navbar = dynamic(() => import('./components/Navbar'))
 const Footer = dynamic(() => import('./components/Footer'))
 
@@ -22,12 +23,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${poppins.className} m-0 p-0 w-screen h-screen scroll-smooth overflow-x-hidden bg-secondary`}>
-        <Navbar />
-        {children}
-        <Footer />
-        </body>
-    </html>
+    
+    <SessionWrapper>
+      <html lang="en">
+        <body className={`${poppins.className} m-0 p-0 w-screen h-screen scroll-smooth overflow-x-hidden bg-secondary`}>
+          <Navbar />
+          {children}
+          <Footer />
+          </body>
+      </html>
+    </SessionWrapper>
   );
 }

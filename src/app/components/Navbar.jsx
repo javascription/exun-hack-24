@@ -48,13 +48,19 @@ export default function Navigation() {
                 <div className="fixed flex flex-wrap justify-between w-[100%]
                                 items-center z-[100]" ref={navbarRef} >
                     <div className="text-2xl ml-[3rem]"><a href="#" className="mo:text-[2.5rem]">NuxeCorps</a></div>
-                    <ul className="relative flex gap-12 mo:hidden">
+                    <ul className="relative flex gap-12 mo:hidden items-center">
                         <li><a href="/" className="relative">About</a></li>
                         <li><a href="/demo" className="relative">Demo</a></li>
                         <li><a href="/merchandise" className="relative">Merchandise</a></li>
                         <li><a href="/subscription" className="relative">Subscription</a></li>
                         <li><a href="/contact" className="relative">Contact</a></li>
                         <li><a href="Login" className="relative">Login</a></li>
+                        <div className="text-primary cursor-pointer text-[1.6rem]
+                                border-[0.125rem] pt-[0.03rem] pb-[0.03rem]
+                                pl-[0.6rem] pr-[0.6rem] rounded-[100px]
+                                leading-normal mo:hidden mr-[3.6rem]">
+                            <FontAwesomeIcon icon={faMoon}/>
+                        </div>
                     </ul>
                     <FontAwesomeIcon icon={faBars} id="bars" onClick={() => openWrapper()} ref={barsIconRef} 
                         className="color-primary cursor-pointer mr-[4rem] hidden mo:block mo:text-5xl" />
@@ -62,12 +68,6 @@ export default function Navigation() {
                     
                     <FontAwesomeIcon icon={faXmark} onClick={() => closeWrapper()} ref={closeIconRef} 
                         className="hidden text-primary text-[3.3rem] border-4 rounded-2xl mr-12" />
-                    <div className="text-primary cursor-pointer text-[1.6rem]
-                                    border-[0.125rem] pt-[0.03rem] pb-[0.03rem]
-                                    pl-[0.6rem] pr-[0.6rem] rounded-[100px]
-                                    leading-normal mr-[3.6rem] mo:hidden">
-                        <FontAwesomeIcon icon={faMoon}/>
-                    </div>
                 </div>
             </header>
             <div ref={wrapperRef} 
@@ -80,12 +80,12 @@ export default function Navigation() {
                             <FontAwesomeIcon icon={faMoon}/>
                         </div>
                     </a></li>
-                    <li><a className="text-[2.5rem]" href="/">About</a></li>
-                    <li><a className="text-[2.5rem]" href="/demo">Demo</a></li>
-                    <li><a className="text-[2.5rem]" href="/merchandise">Merchandise</a></li>
-                    <li><a className="text-[2.5rem]" href="/subscription">Subscription</a></li>
-                    <li><a className="text-[2.5rem]" href="/contact">Contact</a></li>
-                    <li><a className="text-[2.5rem]" href="Login">Login</a></li>
+                    <li><a className="text-[2.3rem]" href="/">About</a></li>
+                    <li><a className="text-[2.3rem]" href="/demo">Demo</a></li>
+                    <li><a className="text-[2.3rem]" href="/merchandise">Merchandise</a></li>
+                    <li><a className="text-[2.3rem]" href="/subscription">Subscription</a></li>
+                    <li><a className="text-[2.3rem]" href="/contact">Contact</a></li>
+                    <li><a className="text-[2.3rem]" href="Login">Login</a></li>
                 </ul>
             </div>
         </section>
