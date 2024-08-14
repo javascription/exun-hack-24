@@ -29,7 +29,7 @@ export default function Hero() {
                     </motion.div>
                 </AuroraBackground>
                 <div className="top-[40rem] absolute flex w-screen justify-center items-center h-[40rem]">
-                    <div className="text-3xl sm:text-7xl from-slate-50 to-slate-800">Skibidi</div>
+                    <div className="text-3xl sm:text-7xl ">About</div>
                 </div>
             </section>
         </>
