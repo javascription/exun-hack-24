@@ -8,11 +8,11 @@ export default function Footer() {
     return (
         <>
             <section>
-                <div className="p-2-3-percent flex justify-between w-[97%] z-[100] fixed bottom-0 text-primary">
+                <div className="p-2-3-percent flex justify-between w-[100%] z-[100] fixed bottom-0 text-primary">
                     <div className='text-[14px]'>© NuxeCorps Limited, {new Date().getFullYear()}</div>
-                    <div className='f-links flex gap-[5px]'>
-                        <FontAwesomeIcon icon={faGithub}><a href='https://github.com/javascription' target='blank'></a></FontAwesomeIcon>
-                        <FontAwesomeIcon icon={faCode}><a href='https://github.com/javascription' target='blank'></a></FontAwesomeIcon>
+                    <div className='f-links flex'>
+                        <a href='https://github.com/javascription' target='blank'><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></a>
+                        <a href='https://github.com/javascription' target='blank'><FontAwesomeIcon icon={faCode}></FontAwesomeIcon></a>
                     </div>
                 </div>
             </section>

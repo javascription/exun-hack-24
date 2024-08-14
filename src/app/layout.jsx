@@ -6,8 +6,8 @@ import './globals.css';
 
 import dynamic from 'next/dynamic';
 import SessionWrapper from "./components/SessionWrapper";
-const Navbar = dynamic(() => import('./components/Navbar'))
 const Footer = dynamic(() => import('./components/Footer'))
+const Navbar = dynamic(() => import('./components/LoginNav'))
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
     
     <SessionWrapper>
       <html lang="en">
-        <body className={`${poppins.className} m-0 p-0 w-screen h-screen scroll-smooth overflow-x-hidden bg-secondary`}>
+        <body className={`${poppins.className} m-0 p-0 w-screen h-screen scroll-smooth overflow-x-hidden bg-background`}>
           <Navbar />
           {children}
           <Footer />

@@ -3,33 +3,26 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
 
-  --primary: #e5e5e5;
+  --background: #01050c;
+  --text: #e5edfd;
   --secondary: #161616;
-  --tertiary: #ddd;
+
+  --pink: rgb(233, 30, 99);
+  --purple: rgb(156, 39, 176);
+  --blue: rgb(63, 81, 181);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-    
     color-scheme: dark;
   }
+  
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  
 }
 
 @layer utilities {
@@ -47,7 +40,7 @@ body {
 }
 
 .f-links a {
-  padding-inline: 10px;
+  padding-inline: 5px;
 } 
 
 @media (max-width: 650px) {
@@ -56,6 +49,36 @@ body {
   }
 
   .f-links a {
-    padding-inline: 15px;
+    padding-inline: 10px;
   }
+}
+.gradient-text {
+  font-weight: 800;
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--pink),
+    var(--purple),
+    var(--blue),
+    var(--pink)
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  z-index: 40;
+}
+
+.login {
+  padding: 0.3rem 1.5rem;
+  border: 2px solid var(--text);
+  border-radius: 10px;
+  transition: 200ms ease-in-out;
+}
+
+.login:hover {
+  background: #d3d6dd;
+  color: var(--secondary);
+  border-color: #d3d6dd;
 }
