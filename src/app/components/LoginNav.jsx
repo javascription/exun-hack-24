@@ -74,7 +74,7 @@ export default function LoginNav() {
                 <div ref={wrapperRef}
                     className="hidden flex-col top-[0%] fixed w-[100%] h-screen
                                 p-13-percent backdrop-blur-[15px]
-                                text-center items-center z-[1]" >
+                                text-center items-center z-[1]">
                     <ul className="gap-8 flex flex-col">
                         <li><a className="text-[2.3rem] mx:text-[1.9rem]" href="/">About</a></li>
                         <li><a className="text-[2.3rem] mx:text-[1.9rem]" href="/demo">Demo</a></li>
