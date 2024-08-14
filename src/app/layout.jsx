@@ -81,7 +81,7 @@ export default function RootLayout({ children }) {
     
     <SessionWrapper>
       <html lang="en">
-        <body className={`${poppins.className} m-0 p-0 w-screen h-screen scroll-smooth overflow-x-hidden bg-background`}>
+        <body className={`${poppins.className} dark m-0 p-0 w-screen h-screen scroll-smooth overflow-x-hidden bg-background`}>
           <Navbar />
           {children}
           <Footer />

@@ -43,7 +43,7 @@ module.exports = {
     },
   },
   plugins: [addVariablesForColors],
-  
+  darkMode: 'class'
 };
 
 function addVariablesForColors({ addBase, theme }) {

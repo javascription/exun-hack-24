@@ -13,12 +13,17 @@
   --blue: rgb(63, 81, 181);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
+@layer base {
+  html {
+    color-scheme: dark !important;
   }
-  
 }
+
+@media (prefers-color-scheme: white) {
+  :root {
+    color-scheme: white;
+  }
+} 
 
 body {
   color: rgb(var(--foreground-rgb));
