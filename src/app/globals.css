@@ -82,3 +82,18 @@ body {
   color: var(--secondary);
   border-color: #d3d6dd;
 }
+
+.aboutContainer {
+  background: linear-gradient(to bottom right, #0b053a, #344461);
+}
+
+.aboutContainer::before {
+  background: rgba(0, 0, 0, 0.6); /* Black overlay with 60% opacity */
+  z-index: 1;
+}
+
+.p-about {
+  position: absolute;
+  top: 15rem;
+  width: 80%;
+}

@@ -28,9 +28,6 @@ export default function Hero() {
                         </button>
                     </motion.div>
                 </AuroraBackground>
-                <div className="top-[40rem] absolute flex w-screen justify-center items-center h-[40rem]">
-                    <div className="text-3xl sm:text-7xl ">About</div>
-                </div>
             </section>
         </>
     )
