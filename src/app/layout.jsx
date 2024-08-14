@@ -19,13 +19,13 @@ const poppins = Poppins({
 const url = process.env.NEXT_PUBLIC_SITE_URL;
 
 export const metadata = {
-    title: "Exun Internal Hackathon 2024",
-    description: "Made by Gauransh Saini",
+    title: "NuxeCorps Private Limited",
+    description: "Exun Internal Hackathon 2024: Made by Gauransh Saini",
     openGraph: {
-        title: 'Exun Internal Hackathon 2024',
-        description: 'Made by Gauransh Saini',
+        title: 'NuxeCorps Private Limited',
+        description: "Exun Internal Hackathon 2024: Made by Gauransh Saini",
         url: url,
-        siteName: 'Exun Internal Hackathon 2024',
+        siteName: 'NuxeCorps Private Limited',
         images: [
             {
                 url: `${url}/opengraph-image.jpg`,
@@ -50,8 +50,8 @@ export const metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Exun Internal Hackathon 2024',
-        description: 'Made by Gauransh Saini',
+        title: 'NuxeCorps Private Limited',
+        description: "Exun Internal Hackathon 2024: Made by Gauransh Saini",
         image: `${url}/opengraph-image.jpg`,
     },
     robots: {
@@ -61,9 +61,9 @@ export const metadata = {
     canonical: url,
     htmlLang: 'en',
     generator: 'Next.js',
-    applicationName: "Exun Internal Hackathon 2024",
+    applicationName: "NuxeCorps Private Limited",
     referrer: 'origin-when-cross-origin',
-    keywords: ['Exun', 'Internal', 'Hackathon', '2024', 'Gauransh', 'Saini'],
+    keywords: ['Exun', 'Internal', 'Hackathon', '2024', 'Gauransh', 'Saini', 'NuxeCorps', 'Private', 'Limited'],
     authors: [
         { name: 'Gauransh Saini', url: url }
     ],
@@ -81,6 +81,9 @@ export default function RootLayout({ children }) {
     
     <SessionWrapper>
       <html lang="en">
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        </head>
         <body className={`${poppins.className} dark m-0 p-0 w-screen h-screen scroll-smooth overflow-x-hidden bg-background`}>
           <Navbar />
           {children}

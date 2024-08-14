@@ -37,7 +37,7 @@ body {
 }
 
 .p-13-percent {
-  padding: 13% 0;
+  padding: 25% 0;
 }
 
 .p-2-3-percent {
@@ -89,7 +89,8 @@ body {
 }
 
 .aboutContainer {
-  background: linear-gradient(to bottom right, #0b053a, #344461);
+  /* background: linear-gradient(to bottom right, #0b053a, #344461); */
+  background: linear-gradient(to bottom, #161626, #1C0D90)
 }
 
 .aboutContainer::before {
@@ -98,7 +99,5 @@ body {
 }
 
 .p-about {
-  position: absolute;
-  top: 15rem;
   width: 80%;
 }

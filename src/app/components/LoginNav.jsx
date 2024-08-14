@@ -50,10 +50,10 @@ export default function LoginNav() {
                 <header className="relative pt-[2rem] pr-0 pb-[2rem] pl-0">
                     <div className="fixed flex flex-wrap justify-between w-[100%] items-center z-[100]" ref={navbarRef}>
                         <div className="text-2xl ml-[3rem]">
-                            <a href="/" className="mo:text-[2.5rem] mi:text-[2rem]">NuxeCorps</a>
+                            <a href="/" className="mo:text-[2.5rem] mi:text-[1.8rem]">NuxeCorps</a>
                         </div>
                         <ul className="relative flex gap-12 mo:hidden items-center">
-                            <li><a href="/" className="relative">About</a></li>
+                            <li><a href="/#about" className="relative">About</a></li>
                             <li><a href="/demo" className="relative">Demo</a></li>
                             <li><a href="/merchandise" className="relative">Merchandise</a></li>
                             <li><a href="/subscription" className="relative">Subscription</a></li>
@@ -68,7 +68,7 @@ export default function LoginNav() {
                             className="color-primary cursor-pointer mr-[4rem] hidden mo:block mo:text-5xl mi:text-3xl" />
                         
                         <FontAwesomeIcon icon={faXmark} onClick={() => closeWrapper()} ref={closeIconRef}
-                            className="hidden text-primary text-[3.3rem] border-4 rounded-2xl mr-12" />
+                            className="hidden text-primary text-[3.3rem] border-4 rounded-2xl mr-12 px-5" />
                     </div>
                 </header>
                 <div ref={wrapperRef}
