@@ -1,11 +1,8 @@
 
 "use client"
 
-import { signIn, signOut, useSession } from "next-auth/react"
+import { useSession } from "next-auth/react"
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGoogle } from "@fortawesome/free-brands-svg-icons/faGoogle";
-import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
 
 import { Inter } from "next/font/google";
 
