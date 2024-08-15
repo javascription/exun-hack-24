@@ -1,6 +1,6 @@
 "use client";
 
-import { InfiniteMovingCards } from './ui/Cards'
+import { InfiniteMovingCards } from './ui/Cards.jsx'
 import React, { useEffect, useState } from "react";
 import Heading from './ui/Heading';
 
@@ -20,31 +20,32 @@ export default function InfiniteMovingCardsDemo() {
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+      "TeddyBuddy has been a lifesaver for our son after his surgery. It gave him comfort when we couldn't, and helped him express his feelings in a way we never imagined.",
+    name: "Emily Thompson",
+    title: "Mother of 5-year-old patient",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
-  },
-  {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+      "As a pediatrician, I see children struggling with post-surgery trauma all the time. TeddyBuddy provides the emotional support that is so crucial during recovery.",
+    name: "Dr. Sarah Williams",
+    title: "Pediatrician at Hope Children's Hospital",
   },
   {
     quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+      "My daughter talks to TeddyBuddy every night before bed. It’s like having a friend who always understands her. We've seen a noticeable improvement in her mood and confidence.",
+    name: "Michael Davis",
+    title: "Father of 4-year-old patient"
   },
   {
     quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+      "TeddyBuddy is a game-changer for child therapy. It’s an incredible tool that helps children open up about their fears and anxieties in a safe and comforting way.",
+    name: "Mrs. Amanda Green",
+    title: "Child Psychologist"
+  },
+  {
+    quote:
+      "I’ve never seen a product that connects with children on such a deep emotional level. TeddyBuddy is more than a toy; it's a friend and a healer.",
+    name: "Rebecca Carter",
+    title: "CEO of Children's Health Foundation",
   },
 ];

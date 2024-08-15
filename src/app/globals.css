@@ -75,17 +75,27 @@ body {
   z-index: 40;
 }
 
-.login {
+.login,
+.demo,
+.contact {
   padding: 0.3rem 1.5rem;
-  border: 2px solid var(--text);
   border-radius: 10px;
   transition: 200ms ease-in-out;
+  border: 2px solid var(--text);
 }
 
 .login:hover {
   background: #d3d6dd;
   color: var(--secondary);
   border-color: #d3d6dd;
+}
+
+.demo:hover {
+  background: #72a2f9;
+}
+
+.contact:hover {
+  background: #80069c;
 }
 
 .aboutContainer {
