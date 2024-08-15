@@ -6,7 +6,7 @@ import Heading from './ui/Heading';
 
 export default function InfiniteMovingCardsDemo() {
   return (
-    <div className="testimonials absolute top-[74.8rem] h-[40rem] rounded-md flex flex-col antialiased items-center justify-center overflow-hidden">
+    <div className="absolute top-[79.9rem] h-[40rem] rounded-md flex flex-col antialiased items-center justify-center overflow-hidden">
       <Heading className="absolute top-[2rem] mi:text-5xl text-6xl sm:text-7xl md:text-8xl">Testimonials</Heading>
       <InfiniteMovingCards
         items={testimonials}
@@ -34,7 +34,7 @@ const testimonials = [
     quote:
       "My daughter talks to TeddyBuddy every night before bed. It’s like having a friend who always understands her. We've seen a noticeable improvement in her mood and confidence.",
     name: "Michael Davis",
-    title: "Father of 4-year-old patient"
+    title: "Father of 4-year-old patient",
   },
   {
     quote:

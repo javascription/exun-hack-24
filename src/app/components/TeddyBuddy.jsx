@@ -7,7 +7,7 @@ import Link from 'next/link'
 export default function TeddyBuddy() {
     return (
         <>
-            <div className="teddy top-[114.7rem] absolute w-screen h-[40rem]">
+            <div className="aboutContainer top-[119.9rem] absolute w-screen h-[40rem]">
                 <TextMotion className="flex justify-center items-center">
                     <Heading className="absolute top-[5rem] sm:top-[6rem] md:top-[7rem] mi:text-5xl text-6xl sm:text-7xl md:text-8xl pb-5">TeddyBuddy</Heading>
                     <p className="p-about font-normal mi:text-xs sm:text-sm md:text-base text-justify text-neutral-300 mx-auto w-80% 

@@ -4,7 +4,7 @@ import TextMotion from "./ui/TextMotion";
 export default function About() {
     return (
         <>
-            <div className="aboutContainer top-[39.9rem] absolute w-screen h-[35rem]" id="about">
+            <div className="teddy top-[39.9rem] absolute w-screen h-[35rem]" id="about">
                 <TextMotion className="flex justify-center items-center">
                     <Heading className="absolute top-[5rem] sm:top-[6rem] md:top-[7rem] mi:text-5xl text-6xl sm:text-7xl md:text-8xl">About</Heading>
                     <p className="p-about font-normal mi:text-sm sm:text-base md:text-lg text-center text-neutral-300 mx-auto w-80% 

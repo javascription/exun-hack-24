@@ -113,10 +113,6 @@ body {
   width: 80%;
 }
 
-.testimonials {
-  background: linear-gradient(to bottom,   #1C0D90, #01050C)
-}
-
 .teddy {
-  background: linear-gradient(to bottom, #01050C, #1C0D90)
+  background: linear-gradient(to bottom right, #0b053a, #344461);
 }
