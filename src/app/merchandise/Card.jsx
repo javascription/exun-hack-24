@@ -10,7 +10,7 @@ export default function Card({ image, alt, title, description, badge }) {
                 </div>
             )}
             <div className="p-2 flex justify-center">
-                <Link href="/waitlist">
+                <Link href="/cart">
                     <Image
                         src={`/merch/${image}.png`}
                         alt={alt}
@@ -23,7 +23,7 @@ export default function Card({ image, alt, title, description, badge }) {
             </div>
             <div className="px-4 pb-3">
                 <div>
-                    <Link href="/waitlist">
+                    <Link href="/cart">
                         <h5 className="text-xl font-semibold tracking-tight hover:text-violet-300">
                             {title}
                         </h5>
