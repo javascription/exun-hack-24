@@ -56,7 +56,6 @@ export default function LoginNav() {
                             <li><Link href="/#about" className="relative">About</Link></li>
                             <li><Link href="/demo" className="relative">Demo</Link></li>
                             <li><Link href="/merchandise" className="relative">Merchandise</Link></li>
-                            <li><Link href="/subscription" className="relative">Subscription</Link></li>
                             <li><Link href="/contact" className="relative">Contact</Link></li>
                             <li>
                                 <Link href="/login" className="relative mr-[3.6rem] login">
@@ -79,7 +78,6 @@ export default function LoginNav() {
                         <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/">About</Link></li>
                         <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/demo">Demo</Link></li>
                         <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/merchandise">Merchandise</Link></li>
-                        <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/subscription">Subscription</Link></li>
                         <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/contact">Contact</Link></li>
                         <li><Link className="text-[2.3rem] mx:text-[1.9rem] login" href="/login">{session && session.user ? session.user.name.split(" ")[0] : "Login"}</Link></li>
                     </ul>
