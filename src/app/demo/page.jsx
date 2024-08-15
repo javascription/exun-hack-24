@@ -14,9 +14,12 @@ export default function Page() {
                         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
                             Live Demo
                         </h2>
-                        <p className=" text-left text-gray-500 dark:text-gray-400">
-                            Coming Soon...
-                        </p>
+                        <div class="video-container">
+                            <video width="640" height="360" controls>
+                                <source src="/Backup.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
                     </div>
                 </section>
             ) : ( 
