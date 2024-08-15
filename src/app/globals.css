@@ -41,7 +41,7 @@ body {
 }
 
 .p-2-3-percent {
-  padding: 2% 3%;
+  padding: 1.4% 3%;
 }
 
 .f-links a {
@@ -57,6 +57,7 @@ body {
     padding-inline: 10px;
   }
 }
+
 .gradient-text {
   font-weight: 800;
   animation: background-pan 3s linear infinite;
@@ -110,4 +111,12 @@ body {
 
 .p-about {
   width: 80%;
+}
+
+.testimonials {
+  background: linear-gradient(to bottom,   #1C0D90, #01050C)
+}
+
+.teddy {
+  background: linear-gradient(to bottom, #01050C, #1C0D90)
 }

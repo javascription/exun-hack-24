@@ -50,14 +50,14 @@ export default function LoginNav() {
                 <header className="relative pt-[2rem] pr-0 pb-[2rem] pl-0">
                     <div className="fixed flex flex-wrap justify-between w-[100%] items-center z-[100]" ref={navbarRef}>
                         <div className="text-2xl ml-[3rem]">
-                            <a href="/" className="mo:text-[2.5rem] mi:text-[1.8rem]">NuxeCorps</a>
+                            <Link href="/" className="mo:text-[2.5rem] mi:text-[1.8rem]">NuxeCorps</Link>
                         </div>
                         <ul className="relative flex gap-12 mo:hidden items-center">
-                            <li><a href="/#about" className="relative">About</a></li>
-                            <li><a href="/demo" className="relative">Demo</a></li>
-                            <li><a href="/merchandise" className="relative">Merchandise</a></li>
-                            <li><a href="/subscription" className="relative">Subscription</a></li>
-                            <li><a href="/contact" className="relative">Contact</a></li>
+                            <li><Link href="/#about" className="relative">About</Link></li>
+                            <li><Link href="/demo" className="relative">Demo</Link></li>
+                            <li><Link href="/merchandise" className="relative">Merchandise</Link></li>
+                            <li><Link href="/subscription" className="relative">Subscription</Link></li>
+                            <li><Link href="/contact" className="relative">Contact</Link></li>
                             <li>
                                 <Link href="/login" className="relative mr-[3.6rem] login">
                                     {session && session.user ? session.user.name.split(" ")[0] : "Login"}
@@ -76,11 +76,11 @@ export default function LoginNav() {
                                 p-13-percent backdrop-blur-[15px]
                                 text-center items-center z-[1]">
                     <ul className="gap-8 flex flex-col">
-                        <li><a className="text-[2.3rem] mx:text-[1.9rem]" href="/">About</a></li>
-                        <li><a className="text-[2.3rem] mx:text-[1.9rem]" href="/demo">Demo</a></li>
-                        <li><a className="text-[2.3rem] mx:text-[1.9rem]" href="/merchandise">Merchandise</a></li>
-                        <li><a className="text-[2.3rem] mx:text-[1.9rem]" href="/subscription">Subscription</a></li>
-                        <li><a className="text-[2.3rem] mx:text-[1.9rem]" href="/contact">Contact</a></li>
+                        <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/">About</Link></li>
+                        <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/demo">Demo</Link></li>
+                        <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/merchandise">Merchandise</Link></li>
+                        <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/subscription">Subscription</Link></li>
+                        <li><Link className="text-[2.3rem] mx:text-[1.9rem]" href="/contact">Contact</Link></li>
                         <li><Link className="text-[2.3rem] mx:text-[1.9rem] login" href="/login">{session && session.user ? session.user.name.split(" ")[0] : "Login"}</Link></li>
                     </ul>
                 </div>

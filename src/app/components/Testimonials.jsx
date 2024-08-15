@@ -6,7 +6,7 @@ import Heading from './ui/Heading';
 
 export default function InfiniteMovingCardsDemo() {
   return (
-    <div className="absolute top-[79.9rem] h-[40rem] rounded-md flex flex-col antialiased items-center justify-center overflow-hidden">
+    <div className="testimonials absolute top-[74.8rem] h-[40rem] rounded-md flex flex-col antialiased items-center justify-center overflow-hidden">
       <Heading className="absolute top-[2rem] mi:text-5xl text-6xl sm:text-7xl md:text-8xl">Testimonials</Heading>
       <InfiniteMovingCards
         items={testimonials}
