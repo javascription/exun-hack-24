@@ -21,7 +21,7 @@
     "next-auth": "^4.24.7",
     "react": "^18",
     "react-dom": "^18",
-    "react-parallax-tilt": "^1.7.236",
+    "react-parallax-tilt": "^1.7.237",
     "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
